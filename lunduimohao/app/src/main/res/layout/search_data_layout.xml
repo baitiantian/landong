@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/search_data_include"
+        layout="@layout/data_main_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/search_data_linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_below="@+id/search_data_include">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home_main_8"
+                android:textColor="@color/dark_line"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/e_car_num_1"
+                android:layout_width="90dp"
+                android:layout_height="45dp"
+                android:background="@drawable/bg_edit_text"
+                android:gravity="center"
+                android:hint="@string/wheel_data_1"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textColor="@color/dark_line"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="0dp"
+                android:paddingStart="10dp"
+                android:text="@string/home_main_9"
+                android:textColor="@color/dark_line"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/e_car_num_2"
+                android:layout_width="90dp"
+                android:layout_height="45dp"
+                android:background="@drawable/bg_edit_text"
+                android:gravity="center"
+                android:hint="@string/wheel_data_2"
+                android:inputType="number"
+                android:maxLength="2"
+                android:textColor="@color/dark_line"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home_main_10"
+                android:textColor="@color/dark_line"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/e_car_num_3"
+                android:layout_width="90dp"
+                android:layout_height="45dp"
+                android:background="@drawable/bg_edit_text"
+                android:gravity="center"
+                android:hint="@string/wheel_data_3"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/dark_line"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="0dp"
+                android:paddingStart="10dp"
+                android:text="@string/home_main_11"
+                android:textColor="@color/dark_line"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/e_car_num_4"
+                android:layout_width="90dp"
+                android:layout_height="45dp"
+                android:entries="@array/s_car_num_4"
+                android:gravity="center"
+                android:textColor="@color/dark_line"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_data_linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_below="@+id/search_data_linear1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home_main_17"
+            android:textColor="@color/dark_line"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/num_ID"
+            android:layout_width="180dp"
+            android:layout_height="45dp"
+            android:background="@drawable/bg_edit_text"
+            android:gravity="center"
+            android:textColor="@color/dark_line"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/bt_car_num_save"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/button"
+            android:text="@string/search"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/search_data_linear3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/dark_line"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_below="@+id/search_data_linear2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="@string/list2_1"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/list_4"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/list_2"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/list_3"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/list_5"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/list_6"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/searchdata_select_data"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="反选"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+
+    <ListView
+        android:id="@+id/search_data_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_data_linear3"
+        android:layout_above="@+id/l_delete_data"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/l_delete_data"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+        <TextView
+            android:id="@+id/search_data_delete"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="批量操作"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:background="@drawable/button"
+            android:clickable="true" />
+        <Button
+            android:id="@+id/page_back"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:text="取 消"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            />
+        <Button
+            android:id="@+id/delete_data"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button"
+            android:text="删 除"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+</RelativeLayout>

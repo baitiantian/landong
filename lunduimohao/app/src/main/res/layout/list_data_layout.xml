@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/data_main_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|bottom"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/button"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:text="@string/home_main_4"
+            android:id="@+id/data"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/button"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:text="@string/data_main_0"
+            android:id="@+id/save_data"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            tools:ignore="ButtonStyle" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_line"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@android:color/white"
+            android:text="@string/list_1"
+            android:layout_weight="0.5"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@android:color/white"
+            android:text="@string/list_2"
+            android:layout_weight="1"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@android:color/white"
+            android:text="@string/list_3"
+            android:layout_weight="1"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@android:color/white"
+            android:text="@string/list_4"
+            android:layout_weight="1"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@android:color/white"
+            android:text="@string/list_5"
+            android:layout_weight="1"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@android:color/white"
+            android:layout_weight="0.5"
+            android:gravity="center"/>
+    </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list_01"/>
+</LinearLayout>

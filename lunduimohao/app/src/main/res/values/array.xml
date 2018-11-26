@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="s_car_num_4">
+        <item>左侧轮</item>
+        <item>右侧轮</item>
+    </string-array>
+    <string-array name="s_car_num_5">
+        <item>机车车轮</item>
+        <item>货车车轮</item>
+        <item>客车车轮</item>
+    </string-array>
+    <string-array name="s_car_num_6">
+        <item>LM</item>
+        <item>LMA</item>
+        <item>JM</item>
+        <item>JM2</item>
+        <item>JM3</item>
+    </string-array>
+    <string-array name="s_car_num_7">
+        <!--<item>150_1</item>-->
+        <!--<item>150_2</item>-->
+        <item>150</item>
+        <item>120</item>
+        <item>110</item>
+        <item>85</item>
+    </string-array>
+</resources>
