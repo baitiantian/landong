@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/bg_button_white"
+        android:layout_margin="@dimen/dp_5">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="@string/home_main_06"
+                android:textSize="@dimen/txt_12"
+                android:background="@drawable/bg_title_blue"
+                android:id="@+id/l_data"
+                android:gravity="center"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Spinner
+                android:id="@+id/tx_home_route"
+                android:layout_width="90dp"
+                android:layout_height="@dimen/dp_85"
+                android:background="@drawable/bt_home_setting"
+                android:text="@string/home_main_02"
+                android:textColor="@color/black_0"
+                android:textSize="@dimen/txt_14"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"/>
+            <LinearLayout
+                android:layout_width="0.1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white_0"
+                />
+            <Spinner
+                android:id="@+id/tx_home_area"
+                android:layout_width="90dp"
+                android:layout_height="@dimen/dp_85"
+                android:background="@drawable/bt_home_setting"
+                android:text="@string/home_main_03"
+                android:textColor="@color/black_0"
+                android:textSize="@dimen/txt_14"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                />
+
+
+            <LinearLayout
+                android:layout_width="0.1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white_0" />
+
+            <Spinner
+                android:id="@+id/tx_home_section"
+                android:layout_width="90dp"
+                android:layout_height="@dimen/dp_85"
+                android:background="@drawable/bt_home_setting"
+                android:text="@string/home_main_04"
+                android:textColor="@color/black_0"
+                android:textSize="@dimen/txt_14"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"/>
+            <LinearLayout
+                android:layout_width="0.1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white_0" />
+            <Spinner
+                android:id="@+id/tx_home_tunnel"
+                android:layout_width="90dp"
+                android:layout_height="@dimen/dp_85"
+                android:background="@drawable/bt_home_setting"
+                android:text="@string/home_main_05"
+                android:textColor="@color/black_0"
+                android:textSize="@dimen/txt_14"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"/>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/white_0" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_85"
+            android:gravity="center"
+            >
+
+
+            <Spinner
+                android:id="@+id/e_car_num_5"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_button_white"
+                android:entries="@array/s_home_main_01"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/txt_14"
+                android:visibility="gone"/>
+            <RadioGroup
+                android:id="@+id/RadioGroup1"
+                android:orientation="horizontal"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                >
+
+                <RadioButton
+                    android:text="@string/home_main_20"
+                    android:id="@+id/Radio1"
+                    android:checked="true"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/txt_14"
+                    android:textColor="@color/black_0"
+                    />
+                <RadioButton
+                    android:text="@string/home_main_21"
+                    android:id="@+id/Radio2"
+                    android:checked="false"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/txt_14"
+                    android:textColor="@color/black_0"
+                    />
+            </RadioGroup>
+            <LinearLayout
+                android:layout_width="0.1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white_0" />
+
+            <EditText
+                android:id="@+id/tx_home_num"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_button_white"
+                android:hint="@string/home_main_18"
+                android:textColor="@color/black_0"
+                android:textSize="@dimen/txt_14"
+                android:gravity="center"
+                android:singleLine="true"
+                android:inputType="textVisiblePassword"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_5"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home_main_17"
+                android:textColor="@color/black_0"
+                android:textSize="@dimen/txt_14" />
+
+            <TextView
+                android:id="@+id/tx_home_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home_main_12"
+                android:textColor="@color/black_0"
+                android:textSize="@dimen/txt_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="65dp"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/positiveButton"
+                android:layout_width="@dimen/dp_85"
+                android:layout_height="@dimen/dp_40"
+                android:background="@drawable/button"
+                android:gravity="center"
+                android:text="@string/dialog_route_02"
+                android:textSize="@dimen/txt_20"
+                android:textColor="@color/white_1"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/negativeButton"
+                android:layout_width="@dimen/dp_85"
+                android:layout_height="@dimen/dp_40"
+                android:background="@drawable/button"
+                android:gravity="center"
+                android:text="@string/dialog_data_01"
+                android:textSize="@dimen/txt_20"
+                android:textColor="@color/white_1"
+                android:layout_marginStart="20dp"
+                tools:ignore="ButtonStyle" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white_1"
+            android:text=""
+            android:textSize="@dimen/txt_12"
+            android:gravity="center"
+            android:background="@drawable/bg_bottom_blue"
+            />
+    </LinearLayout>
+</LinearLayout>

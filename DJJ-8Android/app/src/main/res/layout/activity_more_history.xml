@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--    <LinearLayout
+        android:id="@+id/activity_more_history_ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/blue_11"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/activity_more_history_ll_back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center|start">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="18dp"
+                android:paddingEnd="0dp"
+                android:paddingStart="5dp"
+                android:src="@drawable/examine_page_back" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/activity_more_history_tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/white_2"
+            android:textSize="20sp" />
+
+        &lt;!&ndash;<LinearLayout&ndash;&gt;
+            &lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;
+            &lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;
+            &lt;!&ndash;android:layout_weight="1"&ndash;&gt;
+            &lt;!&ndash;android:gravity="center">&ndash;&gt;
+
+
+        &lt;!&ndash;</LinearLayout>&ndash;&gt;
+    </LinearLayout>-->
+    <include
+        android:id="@+id/activity_more_history_ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/data_main_title" />
+    <Spinner
+        android:id="@+id/activity_more_history_sp_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginRight="@dimen/dp_5"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/bt_home_setting"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="qing"
+        android:textColor="@color/black_0"
+        android:textSize="@dimen/txt_8"
+        android:layout_below="@+id/activity_more_history_ll_top">
+    </Spinner>
+    <LinearLayout
+        android:id="@+id/activity_more_history_ll"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:orientation="horizontal"
+        android:background="@color/black_0"
+        android:layout_below="@+id/activity_more_history_sp_type"/>
+
+    <com.jinan.ladongjiguan.djj8plus.publicClass.HRecyclerView
+        android:id="@+id/activity_more_history_hrecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/activity_more_history_ll"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</RelativeLayout>

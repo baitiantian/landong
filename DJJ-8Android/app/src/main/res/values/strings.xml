@@ -1,0 +1,212 @@
+<resources>
+    <string name="app_name">DJJ-8</string>
+    <string name="app_maker">© 济南蓝动激光技术有限公司</string>
+    <!--主页-->
+    <string name="main_01">首页</string>
+    <string name="main_02">通讯</string>
+    <string name="main_03">查询</string>
+    <string name="main_04">我的</string>
+    <!--登录页-->
+    <string name="login_01">用&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;户：</string>
+    <string name="login_02">密&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;码：</string>
+    <string name="login_03">登&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;录</string>
+    <string name="login_04">请输入用户名</string>
+    <string name="login_05">请输入密码</string>
+    <!--首页-->
+    <string name="home_main_01">当前位置：</string>
+    <string name="home_main_02">选择路线</string>
+    <string name="home_main_03">选择工区</string>
+    <string name="home_main_04">选择区间</string>
+    <string name="home_main_05">选择隧道</string>
+    <string name="search_main_02">路线暂无</string>
+    <string name="search_main_03">工区暂无</string>
+    <string name="search_main_04">区间暂无</string>
+    <string name="search_main_05">隧道暂无</string>
+    <string name="home_main_06">设&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;置</string>
+    <string name="home_main_07">新添路线</string>
+    <string name="home_main_08">新添工区</string>
+    <string name="home_main_09">新添区间</string>
+    <string name="home_main_10">新添隧道</string>
+    <string name="home_main_11">连接设备：</string>
+    <string name="home_main_12">暂无</string>
+    <string name="home_main_13">连接</string>
+    <string name="home_main_14">接&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;收</string>
+    <string name="home_main_15">测量结果</string>
+    <string name="home_main_16">杆号：</string>
+    <string name="home_main_17">备注：</string>
+    <string name="home_main_18">选择支柱号</string>
+    <string name="home_main_19">6月4日</string>
+    <string name="home_main_20">上行</string>
+    <string name="home_main_21">下行</string>
+    <string name="home_main_22">※ 请在接收需要保存的数据之前尽量设置完全。</string>
+    <string name="not_connected">没有连接任何设备</string>
+    <string name="title_connecting">正在连接</string>
+    <string name="title_connected_to">已连接</string>
+    <string name="title_not_connected">无连接</string>
+    <!--device-->
+    <string name="none_paired">没有已连接过的设备</string>
+    <string name="select_device">选择连接设备</string>
+    <string name="none_found">没有找到设备</string>
+    <string name="scanning">查找设备中</string>
+    <string name="title_paired_devices">已匹配设备</string>
+    <string name="title_other_devices">其他未匹配设备</string>
+    <string name="button_scan">搜寻设备</string>
+    <!--查询-->
+    <string name="search_01">查&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;询</string>
+    <string name="search_02">查&#160;&#160;询&#160;&#160;结&#160;&#160;果</string>
+    <string name="search_03">查&#160;&#160;询&#160;&#160;更&#160;&#160;多</string>
+    <string name="search_04">开始时间</string>
+    <string name="search_05">结束时间</string>
+    <string name="search_06">-点击选择-</string>
+    <!--我的-->
+    <string name="setting_main_01">用户姓名</string>
+    <string name="setting_main_02">用户账号</string>
+    <string name="setting_main_03">用户信息</string>
+    <string name="setting_main_04">清理缓存</string>
+    <string name="setting_main_05">版本号</string>
+    <string name="setting_main_06">V2.0</string>
+    <string name="setting_main_07">退出登录</string>
+    <!--dialog-->
+    <string name="dialog_route_01">请输入新路线</string>
+    <string name="dialog_route_02">取&#160;&#160;&#160;&#160;消</string>
+    <string name="dialog_route_03">确&#160;&#160;&#160;&#160;定</string>
+    <string name="dialog_normal_01">--请选择路线--</string>
+    <string name="dialog_normal_02">--请选择工区--</string>
+    <string name="dialog_normal_03">--请选择区间--</string>
+    <string name="dialog_data_01">保&#160;&#160;&#160;存</string>
+    <string name="dialog_data_02">导&#160;&#160;&#160;高：</string>
+    <string name="dialog_data_03">拉出值：</string>
+    <string name="dialog_data_04">轨&#160;&#160;&#160;距：</string>
+    <string name="dialog_data_05">超&#160;&#160;&#160;高：</string>
+    <string name="dialog_data_06">偏离值：</string>
+    <string name="dialog_data_07">内轨距：</string>
+    <string name="dialog_data_08">红线标高：</string>
+    <string name="dialog_data_09">侧面界限：</string>
+    <string name="dialog_data_10">高度&#160;1：</string>
+    <string name="dialog_data_11">线&#160;&#160;&#160;&#160;距：</string>
+    <string name="dialog_data_12">高&#160;&#160;&#160;&#160;差：</string>
+    <string name="dialog_data_13">高度&#160;2：</string>
+    <string name="dialog_data_14">抬&#160;&#160;&#160;&#160;高：</string>
+    <string name="dialog_data_15">偏&#160;&#160;&#160;&#160;离：</string>
+    <string name="dialog_data_16">水平距：</string>
+    <string name="dialog_data_17">垂直距：</string>
+    <string name="dialog_data_18">支柱跨距：</string>
+    <string name="dialog_data_19">支柱垂直度：</string>
+    <string name="dialog_data_20">定位器坡度：</string>
+    <string name="dialog_data_21">高&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;差：</string>
+    <string-array name="search_title">
+        <item>基础测量</item>
+        <item>岔线中心测量</item>
+        <item>限界测量</item>
+        <item>非支测量</item>
+        <item>定位器测量</item>
+        <item>承力索高差测量</item>
+        <item>500mm处高差测量</item>
+        <item>自由测</item>
+        <item>垂直测量</item>
+        <item>跨距测量</item>
+    </string-array>
+    <!--基础测量-->
+    <string-array name="search_title_d1">
+        <!--<item>名称</item>-->
+        <item>杆号</item>
+        <item>导高</item>
+        <item>拉出值</item>
+        <item>轨距</item>
+        <item>超高</item>
+        <item>时间</item>
+        <item>标注</item>
+    </string-array>
+    <!--岔线中心测量-->
+    <string-array name="search_title_d2">
+        <!--<item>名称</item>-->
+        <item>杆号</item>
+        <item>导高</item>
+        <item>偏离值</item>
+        <item>内轨距</item>
+        <item>时间</item>
+        <item>标注</item>
+    </string-array>
+    <!--限界测量-->
+    <string-array name="search_title_d3">
+        <!--<item>名称</item>-->
+        <item>杆号</item>
+        <item>红线标高</item>
+        <item>测量限界</item>
+        <item>时间</item>
+        <item>标注</item>
+    </string-array>
+    <!--非支测量-->
+    <string-array name="search_title_d5">
+        <!--<item>名称</item>-->
+        <item>杆号</item>
+        <item>非支抬高</item>
+        <item>非支偏离</item>
+        <item>时间</item>
+        <item>标注</item>
+    </string-array>
+    <!--定位器测量-->
+    <string-array name="search_title_d6">
+        <!--<item>名称</item>-->
+        <item>杆号</item>
+        <item>定位器坡度</item>
+        <item>高差</item>
+        <item>时间</item>
+        <item>标注</item>
+    </string-array>
+    <!--承力索高差测量-->
+    <string-array name="search_title_d7">
+        <!--<item>名称</item>-->
+        <item>杆号</item>
+        <item>高度1</item>
+        <item>高度2</item>
+        <item>高差</item>
+        <item>时间</item>
+        <item>标注</item>
+    </string-array>
+    <!--500mm处高差测量-->
+    <string-array name="search_title_d8">
+        <!--<item>名称</item>-->
+        <item>时间</item>
+        <item>标注</item>
+        <item>杆号</item>
+        <item>高度1</item>
+        <item>线距</item>
+        <item>高差</item>
+    </string-array>
+    <!--自由测-->
+    <string-array name="search_title_d9">
+        <!--<item>名称</item>-->
+        <item>杆号</item>
+        <item>水平距</item>
+        <item>垂直距</item>
+        <item>时间</item>
+        <item>标注</item>
+    </string-array>
+    <!--垂直测量-->
+    <string-array name="search_title_dc">
+        <!--<item>名称</item>-->
+        <item>杆号</item>
+        <item>支柱垂直度</item>
+        <item>时间</item>
+        <item>标注</item>
+    </string-array>
+    <!--跨距测量-->
+    <string-array name="search_title_de">
+        <!--<item>名称</item>-->
+        <item>杆号</item>
+        <item>支柱跨距</item>
+        <item>时间</item>
+        <item>标注</item>
+    </string-array>
+    <!--测试  7条-->
+    <string-array name="more_history_title">
+        <item>最新</item>
+        <item>涨幅</item>
+        <item>成交量</item>
+        <item>最高</item>
+        <item>最低</item>
+        <item>买</item>
+        <item>卖</item>
+    </string-array>
+</resources>

@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/fragment_search_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_button_white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center"
+            android:background="@color/blue_11">
+
+            <TextView
+                android:id="@+id/fragment_search_tv_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center"
+                android:text="@string/search_01"
+                android:textColor="@color/white_1"
+                android:textSize="@dimen/txt_22" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/fragment_search_sp_route"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bt_home_setting"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_10"
+                android:text="@string/home_main_02"
+                android:textColor="@color/black_0"
+                android:textSize="@dimen/txt_14" />
+
+            <TextView
+                android:id="@+id/fragment_search_tv_route"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bt_home_setting"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_10"
+                android:text="@string/search_main_02"
+                android:textColor="@color/black_0"
+                android:textSize="@dimen/txt_14"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="0.1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white_0" />
+
+            <Spinner
+                android:id="@+id/fragment_search_sp_area"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bt_home_setting"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_10"
+                android:text="@string/home_main_03"
+                android:textColor="@color/black_0"
+                android:textSize="@dimen/txt_14" />
+
+            <TextView
+                android:id="@+id/fragment_search_tv_area"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bt_home_setting"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_10"
+                android:text="@string/search_main_03"
+                android:textColor="@color/black_0"
+                android:textSize="@dimen/txt_14"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="0.1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white_0" />
+
+            <Spinner
+                android:id="@+id/fragment_search_sp_section"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bt_home_setting"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_10"
+                android:text="@string/home_main_04"
+                android:textColor="@color/black_0"
+                android:textSize="@dimen/txt_14" />
+
+            <TextView
+                android:id="@+id/fragment_search_tv_section"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bt_home_setting"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_10"
+                android:text="@string/search_main_04"
+                android:textColor="@color/black_0"
+                android:textSize="@dimen/txt_14"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="0.1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white_0" />
+
+            <Spinner
+                android:id="@+id/fragment_search_sp_tunnel"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bt_home_setting"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_10"
+                android:text="@string/home_main_05"
+                android:textColor="@color/black_0"
+                android:textSize="@dimen/txt_14" />
+
+            <TextView
+                android:id="@+id/fragment_search_tv_tunnel"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bt_home_setting"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp_10"
+                android:paddingTop="@dimen/dp_10"
+                android:text="@string/search_main_05"
+                android:textColor="@color/black_0"
+                android:textSize="@dimen/txt_14"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/white_0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_margin="10dp">
+
+
+            <Spinner
+                android:id="@+id/fragment_search_sp_text"
+                android:layout_width="@dimen/dp_180"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_button_white"
+                android:entries="@array/s_home_main_01"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/txt_14"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/fragment_search_rl_time"
+                android:layout_width="@dimen/dp_180"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/fragment_search_ll_starttime"
+                    android:layout_width="@dimen/dp_180"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/dp_80"
+                        android:layout_height="wrap_content"
+                        android:text="@string/search_04"
+                        android:textColor="@color/black_0"
+                        android:textSize="@dimen/txt_14" />
+
+                    <TextView
+                        android:id="@+id/fragment_search_tv_starttime"
+                        android:layout_width="@dimen/dp_80"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/search_06"
+                        android:textSize="@dimen/txt_14" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fragment_search_ll_endtime"
+                    android:layout_width="@dimen/dp_180"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fragment_search_ll_starttime"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/dp_80"
+                        android:layout_height="wrap_content"
+                        android:text="@string/search_05"
+                        android:textColor="@color/black_0"
+                        android:textSize="@dimen/txt_14" />
+
+                    <TextView
+                        android:id="@+id/fragmnet_search_tv_endtime"
+                        android:layout_width="@dimen/dp_80"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/search_06"
+                        android:textSize="@dimen/txt_14" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="0.1dp"
+                android:layout_height="match_parent"
+                android:background="@color/white_0" />
+
+            <Spinner
+                android:id="@+id/fragment_search_sp_ganhao"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bt_home_setting"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/home_main_18"
+                android:textColor="@color/black_0"
+                android:textSize="@dimen/txt_14" />
+
+            <TextView
+                android:id="@+id/fragment_search_tv_ganhao"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="@string/home_main_18"
+                android:textColor="@color/black_0"
+                android:textSize="@dimen/txt_14"
+                android:visibility="gone" />
+            <!--android:background="@drawable/bt_home_setting"-->
+        </LinearLayout>
+        <!--        <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="65dp"
+                    android:layout_gravity="bottom"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/fragment_search_bt_positive"
+                        android:layout_width="@dimen/dp_85"
+                        android:layout_height="@dimen/dp_40"
+                        android:background="@drawable/button"
+                        android:gravity="center"
+                        android:text="@string/dialog_route_02"
+                        android:textColor="@color/white_1"
+                        android:textSize="@dimen/txt_20"
+                        tools:ignore="ButtonStyle" />
+
+                    <Button
+                        android:id="@+id/fragment_search_bt_negative"
+                        android:layout_width="@dimen/dp_85"
+                        android:layout_height="@dimen/dp_40"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/button"
+                        android:gravity="center"
+                        android:text="@string/dialog_data_01"
+                        android:textColor="@color/white_1"
+                        android:textSize="@dimen/txt_20"
+                        tools:ignore="ButtonStyle" />
+                </LinearLayout>-->
+
+    </LinearLayout>
+    <Spinner
+        android:id="@+id/fragment_search_sp_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginRight="@dimen/dp_5"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/bt_home_setting"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="qing"
+        android:textColor="@color/black_0"
+        android:textSize="@dimen/txt_8"
+        android:layout_below="@id/fragment_search_linear"/>
+    <LinearLayout
+        android:id="@+id/fragment_search_ll_beizhu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_search_sp_type"
+        android:background="@color/blue_11">
+
+        <TextView
+            android:id="@+id/fragment_search_tv_beizhu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/search_02"
+            android:textColor="@color/white_1"
+            android:textSize="@dimen/txt_14"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <com.jinan.ladongjiguan.djj8plus.publicClass.HRecyclerView
+        android:id="@+id/fragment_search_hrecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_search_ll_beizhu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/fragment_search_tv_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/dp_20"
+        android:background="@drawable/button"
+        android:gravity="center"
+        android:padding="@dimen/dp_10"
+        android:text="@string/search_03"
+        android:textColor="@color/white_1"
+        android:textSize="@dimen/txt_18"
+        android:visibility="gone"/>
+</RelativeLayout>

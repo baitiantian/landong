@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ChooseActivity"
+    android:id="@+id/r_activity_choose"
+    android:background="@color/white_1">
+
+    <include
+        android:id="@+id/activity_choose_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/data_main_title" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/activity_choose_srefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/activity_choose_rl">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/activity_choose_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

@@ -1,0 +1,1430 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_10">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:id="@+id/dialog_background"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_button_white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_title_blue"
+                android:gravity="center"
+                android:textColor="@color/white_1"
+                android:textSize="@dimen/txt_16"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|center"
+                    android:textColor="@color/black_0"
+                    android:textSize="@dimen/txt_16"
+                    android:visibility="gone" />
+                <!--imageview-->
+                <LinearLayout
+                    android:layout_width="@dimen/dp_100"
+                    android:layout_height="@dimen/dp_200"
+                    android:layout_margin="@dimen/dp_5"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/img_data_show"
+                        android:layout_width="@dimen/dp_100"
+                        android:layout_height="@dimen/dp_150"
+                        android:src="@drawable/setting_head" />
+                </LinearLayout>
+                <!--d1-->
+                <LinearLayout
+                    android:id="@+id/l_data_d1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_10"
+                    android:gravity="center|start"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                    <!--待测试-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/dp_5">
+
+                        <TextView
+                            android:id="@+id/dialog_data_text_d1_dg"
+                            android:layout_width="@dimen/dp_80"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:gravity="end"
+                            android:text="@string/dialog_data_02"
+                            android:textColor="@color/black_0"
+                            android:textSize="@dimen/txt_14" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/dialog_data_text_d1_dg"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tx_data_d1_01"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:text="@string/dialog_data_02"
+                                android:textColor="@color/black_0"
+                                android:textSize="@dimen/txt_14" />
+
+                            <TextView
+                                android:id="@+id/tx_data_d1_01last"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:text="@string/dialog_data_02"
+                                android:textColor="@color/blue_5"
+                                android:textSize="@dimen/txt_14" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/dp_5">
+
+                        <TextView
+                            android:id="@+id/dialog_data_text_d1_lcz"
+                            android:layout_width="@dimen/dp_80"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:gravity="end"
+                            android:text="@string/dialog_data_03"
+                            android:textColor="@color/black_0"
+                            android:textSize="@dimen/txt_14" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/dialog_data_text_d1_lcz"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tx_data_d1_02"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:text="@string/dialog_data_03"
+                                android:textColor="@color/black_0"
+                                android:textSize="@dimen/txt_14" />
+
+                            <TextView
+                                android:id="@+id/tx_data_d1_02last"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:text="@string/dialog_data_03"
+                                android:textColor="@color/blue_5"
+                                android:textSize="@dimen/txt_14" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/dp_5">
+
+                        <TextView
+                            android:id="@+id/dialog_data_text_d1_gj"
+                            android:layout_width="@dimen/dp_80"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:gravity="end"
+                            android:text="@string/dialog_data_04"
+                            android:textColor="@color/black_0"
+                            android:textSize="@dimen/txt_14" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/dialog_data_text_d1_gj"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tx_data_d1_03"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:text="@string/dialog_data_04"
+                                android:textColor="@color/black_0"
+                                android:textSize="@dimen/txt_14" />
+
+                            <TextView
+                                android:id="@+id/tx_data_d1_03last"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:text="@string/dialog_data_04"
+                                android:textColor="@color/blue_5"
+                                android:textSize="@dimen/txt_14" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/dp_5">
+
+                        <TextView
+                            android:id="@+id/dialog_data_text_d1_cg"
+                            android:layout_width="@dimen/dp_80"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:gravity="end"
+                            android:text="@string/dialog_data_05"
+                            android:textColor="@color/black_0"
+                            android:textSize="@dimen/txt_14" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/dialog_data_text_d1_cg"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tx_data_d1_04"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:text="@string/dialog_data_05"
+                                android:textColor="@color/black_0"
+                                android:textSize="@dimen/txt_14" />
+
+                            <TextView
+                                android:id="@+id/tx_data_d1_04last"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:text="@string/dialog_data_05"
+                                android:textColor="@color/blue_5"
+                                android:textSize="@dimen/txt_14" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <!--</LinearLayout>-->
+                    <!--<LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_100"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:gravity="center|start">
+                            <TextView
+                                android:layout_width="@dimen/dp_65"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/txt_14"
+                                android:textColor="@color/black_0"
+                                android:text="@string/dialog_data_02"
+                                android:gravity="center_vertical|end"
+                                android:layout_gravity="center_vertical"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/txt_14"
+                                android:textColor="@color/black_0"
+                                android:text="@string/dialog_data_02"
+                                android:id="@+id/tx_data_d1_01"
+                                android:gravity="center_vertical"
+                                android:layout_gravity="center_vertical"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:gravity="center|start">
+                            <TextView
+                                android:layout_width="@dimen/dp_65"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/txt_14"
+                                android:textColor="@color/black_0"
+                                android:text="@string/dialog_data_03"
+                                android:gravity="end"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/txt_14"
+                                android:textColor="@color/black_0"
+                                android:text="@string/dialog_data_02"
+                                android:id="@+id/tx_data_d1_02"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_100"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:gravity="center|start">
+                            <TextView
+                                android:layout_width="@dimen/dp_65"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/txt_14"
+                                android:textColor="@color/black_0"
+                                android:text="@string/dialog_data_04"
+                                android:gravity="end"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/txt_14"
+                                android:textColor="@color/black_0"
+                                android:text="@string/dialog_data_02"
+                                android:id="@+id/tx_data_d1_03"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:gravity="center|start"
+                            >
+                            <TextView
+                                android:layout_width="@dimen/dp_65"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/txt_14"
+                                android:textColor="@color/black_0"
+                                android:text="@string/dialog_data_05"
+                                android:gravity="end"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/txt_14"
+                                android:textColor="@color/black_0"
+                                android:text="@string/dialog_data_02"
+                                android:id="@+id/tx_data_d1_04"/>
+                        </LinearLayout>
+                    </LinearLayout>-->
+                </LinearLayout>
+                <!--d2-->
+                <LinearLayout
+                    android:id="@+id/l_data_d2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_10"
+                    android:gravity="center|start"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/dp_5">
+
+                        <TextView
+                            android:id="@+id/dialog_data_text_d2_dg"
+                            android:layout_width="@dimen/dp_80"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:gravity="end"
+                            android:text="@string/dialog_data_02"
+                            android:textColor="@color/black_0"
+                            android:textSize="@dimen/txt_14" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/dialog_data_text_d2_dg"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tx_data_d2_01"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/dialog_data_02"
+                                android:textColor="@color/black_0"
+                                android:textSize="@dimen/txt_14" />
+
+                            <TextView
+                                android:id="@+id/tx_data_d2_01last"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/dialog_data_02"
+                                android:textColor="@color/blue_5"
+                                android:textSize="@dimen/txt_14" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/dp_5">
+
+                        <TextView
+                            android:id="@+id/dialog_data_text_d2_plz"
+                            android:layout_width="@dimen/dp_80"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:gravity="end"
+                            android:text="@string/dialog_data_06"
+                            android:textColor="@color/black_0"
+                            android:textSize="@dimen/txt_14" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/dialog_data_text_d2_plz"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tx_data_d2_02"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:text="@string/dialog_data_06"
+                                android:textColor="@color/black_0"
+                                android:textSize="@dimen/txt_14" />
+
+                            <TextView
+                                android:id="@+id/tx_data_d2_02last"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:text="@string/dialog_data_06"
+                                android:textColor="@color/blue_5"
+                                android:textSize="@dimen/txt_14" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/dp_5">
+
+                        <TextView
+                            android:id="@+id/dialog_data_text_d2_ngj"
+                            android:layout_width="@dimen/dp_80"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:gravity="end"
+                            android:text="@string/dialog_data_07"
+                            android:textColor="@color/black_0"
+                            android:textSize="@dimen/txt_14" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/dialog_data_text_d2_ngj"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tx_data_d2_03"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/dialog_data_02"
+                                android:textColor="@color/black_0"
+                                android:textSize="@dimen/txt_14" />
+
+                            <TextView
+                                android:id="@+id/tx_data_d2_03last"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/dialog_data_02"
+                                android:textColor="@color/blue_5"
+                                android:textSize="@dimen/txt_14" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <!--                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_100"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="@dimen/dp_65"
+                                android:layout_height="wrap_content"
+                                android:gravity="end"
+                                android:text="@string/dialog_data_02"
+                                android:textColor="@color/black_0"
+                                android:textSize="@dimen/txt_14" />
+
+                            <TextView
+                                android:id="@+id/tx_data_d2_01"
+                                android:layout_width="@dimen/dp_65"
+                                android:layout_height="wrap_content"
+                                android:text="@string/dialog_data_02"
+                                android:textColor="@color/black_0"
+                                android:textSize="@dimen/txt_14" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:orientation="horizontal">>
+
+                            <TextView
+                                android:layout_width="@dimen/dp_65"
+                                android:layout_height="wrap_content"
+                                android:gravity="end"
+                                android:text="@string/dialog_data_06"
+                                android:textColor="@color/black_0"
+                                android:textSize="@dimen/txt_14" />
+
+                            <TextView
+                                android:id="@+id/tx_data_d2_02"
+                                android:layout_width="@dimen/dp_65"
+                                android:layout_height="wrap_content"
+                                android:text="@string/dialog_data_06"
+                                android:textColor="@color/black_0"
+                                android:textSize="@dimen/txt_14" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_100"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="@dimen/dp_65"
+                                android:layout_height="wrap_content"
+                                android:gravity="end"
+                                android:text="@string/dialog_data_07"
+                                android:textColor="@color/black_0"
+                                android:textSize="@dimen/txt_14" />
+
+                            <TextView
+                                android:id="@+id/tx_data_d2_03"
+                                android:layout_width="@dimen/dp_65"
+                                android:layout_height="wrap_content"
+                                android:text="@string/dialog_data_02"
+                                android:textColor="@color/black_0"
+                                android:textSize="@dimen/txt_14" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:orientation="horizontal" />
+                    </LinearLayout>-->
+                </LinearLayout>
+                <!--d3-->
+                <LinearLayout
+                    android:id="@+id/l_data_d3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_10"
+                    android:gravity="center|start"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/dp_5">
+
+                        <TextView
+                            android:id="@+id/dialog_data_text_d3_hxbg"
+                            android:layout_width="@dimen/dp_80"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:gravity="end"
+                            android:text="@string/dialog_data_08"
+                            android:textColor="@color/black_0"
+                            android:textSize="@dimen/txt_14" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/dialog_data_text_d3_hxbg"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tx_data_d3_01"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:text="@string/dialog_data_08"
+                                android:textColor="@color/black_0"
+                                android:textSize="@dimen/txt_14" />
+
+                            <TextView
+                                android:id="@+id/tx_data_d3_01last"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:text="@string/dialog_data_08"
+                                android:textColor="@color/blue_5"
+                                android:textSize="@dimen/txt_14" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/dp_5">
+
+                        <TextView
+                            android:id="@+id/dialog_data_text_d3_cmjx"
+                            android:layout_width="@dimen/dp_80"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:gravity="end"
+                            android:text="@string/dialog_data_09"
+                            android:textColor="@color/black_0"
+                            android:textSize="@dimen/txt_14" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/dialog_data_text_d3_cmjx"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tx_data_d3_02"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:text="@string/dialog_data_09"
+                                android:textColor="@color/black_0"
+                                android:textSize="@dimen/txt_14" />
+
+                            <TextView
+                                android:id="@+id/tx_data_d3_02last"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:text="@string/dialog_data_09"
+                                android:textColor="@color/blue_5"
+                                android:textSize="@dimen/txt_14" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <!--d5-->
+                <LinearLayout
+                    android:id="@+id/l_data_d5"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_200"
+                    android:layout_margin="@dimen/dp_10"
+                    android:gravity="center|start"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/dp_5">
+
+                        <TextView
+                            android:id="@+id/dialog_data_text_d5_tg"
+                            android:layout_width="@dimen/dp_80"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:gravity="end"
+                            android:text="@string/dialog_data_14"
+                            android:textColor="@color/black_0"
+                            android:textSize="@dimen/txt_14" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/dialog_data_text_d5_tg"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tx_data_d5_01"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:text="@string/dialog_data_14"
+                                android:textColor="@color/black_0"
+                                android:textSize="@dimen/txt_14" />
+
+                            <TextView
+                                android:id="@+id/tx_data_d5_01last"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:text="@string/dialog_data_14"
+                                android:textColor="@color/blue_5"
+                                android:textSize="@dimen/txt_14" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/dp_5">
+
+                        <TextView
+                            android:id="@+id/dialog_data_text_d5_pl"
+                            android:layout_width="@dimen/dp_80"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:layout_centerVertical="true"
+                            android:text="@string/dialog_data_15"
+                            android:textColor="@color/black_0"
+                            android:textSize="@dimen/txt_14" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/dialog_data_text_d5_pl"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tx_data_d5_02"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:text="@string/dialog_data_15"
+                                android:textColor="@color/black_0"
+                                android:textSize="@dimen/txt_14" />
+
+                            <TextView
+                                android:id="@+id/tx_data_d5_02last"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:text="@string/dialog_data_15"
+                                android:textColor="@color/blue_5"
+                                android:textSize="@dimen/txt_14" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <!--d6-->
+                <LinearLayout
+                    android:id="@+id/l_data_d6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_10"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/dp_5">
+
+                        <TextView
+                            android:id="@+id/dialog_data_text_d6_dwqpd"
+                            android:layout_width="@dimen/dp_100"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:gravity="end"
+                            android:text="@string/dialog_data_20"
+                            android:textColor="@color/black_0"
+                            android:textSize="@dimen/txt_14" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/dialog_data_text_d6_dwqpd"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tx_data_d6_01"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:text="@string/dialog_data_20"
+                                android:textColor="@color/black_0"
+                                android:textSize="@dimen/txt_14" />
+
+                            <TextView
+                                android:id="@+id/tx_data_d6_01last"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:text="@string/dialog_data_20"
+                                android:textColor="@color/blue_5"
+                                android:textSize="@dimen/txt_14" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/dp_5">
+
+                        <TextView
+                            android:id="@+id/dialog_data_text_d6_gc"
+                            android:layout_width="@dimen/dp_100"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:gravity="end"
+                            android:text="@string/dialog_data_21"
+                            android:textColor="@color/black_0"
+                            android:textSize="@dimen/txt_14" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/dialog_data_text_d6_gc"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tx_data_d6_02"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:text="@string/dialog_data_21"
+                                android:textColor="@color/black_0"
+                                android:textSize="@dimen/txt_14" />
+
+                            <TextView
+                                android:id="@+id/tx_data_d6_02last"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:text="@string/dialog_data_21"
+                                android:textColor="@color/blue_5"
+                                android:textSize="@dimen/txt_14" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <!--d7-->
+                <LinearLayout
+                    android:id="@+id/l_data_d7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_10"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/dp_5">
+
+                        <TextView
+                            android:id="@+id/dialog_data_text_d7_gd1"
+                            android:layout_width="@dimen/dp_80"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:gravity="end"
+                            android:text="@string/dialog_data_10"
+                            android:textColor="@color/black_0"
+                            android:textSize="@dimen/txt_14" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/dialog_data_text_d7_gd1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tx_data_d7_01"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:text="@string/dialog_data_10"
+                                android:textColor="@color/black_0"
+                                android:textSize="@dimen/txt_14" />
+
+                            <TextView
+                                android:id="@+id/tx_data_d7_01last"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:text="@string/dialog_data_10"
+                                android:textColor="@color/blue_5"
+                                android:textSize="@dimen/txt_14" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/dp_5">
+
+                        <TextView
+                            android:id="@+id/dialog_data_text_d7_gd2"
+                            android:layout_width="@dimen/dp_80"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:gravity="end"
+                            android:text="@string/dialog_data_13"
+                            android:textColor="@color/black_0"
+                            android:textSize="@dimen/txt_14" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/dialog_data_text_d7_gd2"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tx_data_d7_02"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:text="@string/dialog_data_13"
+                                android:textColor="@color/black_0"
+                                android:textSize="@dimen/txt_14" />
+
+                            <TextView
+                                android:id="@+id/tx_data_d7_02last"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:text="@string/dialog_data_13"
+                                android:textColor="@color/blue_5"
+                                android:textSize="@dimen/txt_14" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/dp_5">
+
+                        <TextView
+                            android:id="@+id/dialog_data_text_d7_gc"
+                            android:layout_width="@dimen/dp_80"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:gravity="end"
+                            android:text="@string/dialog_data_12"
+                            android:textColor="@color/black_0"
+                            android:textSize="@dimen/txt_14" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/dialog_data_text_d7_gc"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tx_data_d7_03"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:text="@string/dialog_data_12"
+                                android:textColor="@color/black_0"
+                                android:textSize="@dimen/txt_14" />
+
+                            <TextView
+                                android:id="@+id/tx_data_d7_03last"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:text="@string/dialog_data_12"
+                                android:textColor="@color/blue_5"
+                                android:textSize="@dimen/txt_14" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <!--d8-->
+                <LinearLayout
+                    android:id="@+id/l_data_d8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_10"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/dp_5">
+
+                        <TextView
+                            android:id="@+id/dialog_data_text_d8_gd1"
+                            android:layout_width="@dimen/dp_80"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:gravity="end"
+                            android:text="@string/dialog_data_10"
+                            android:textColor="@color/black_0"
+                            android:textSize="@dimen/txt_14" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/dialog_data_text_d8_gd1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tx_data_d8_01"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:text="@string/dialog_data_10"
+                                android:textColor="@color/black_0"
+                                android:textSize="@dimen/txt_14" />
+
+                            <TextView
+                                android:id="@+id/tx_data_d8_01last"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:text="@string/dialog_data_10"
+                                android:textColor="@color/blue_5"
+                                android:textSize="@dimen/txt_14" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/dp_5">
+
+                        <TextView
+                            android:id="@+id/dialog_data_text_d8_xj"
+                            android:layout_width="@dimen/dp_80"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:gravity="end"
+                            android:text="@string/dialog_data_11"
+                            android:textColor="@color/black_0"
+                            android:textSize="@dimen/txt_14" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/dialog_data_text_d8_xj"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tx_data_d8_02"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:text="@string/dialog_data_11"
+                                android:textColor="@color/black_0"
+                                android:textSize="@dimen/txt_14" />
+
+                            <TextView
+                                android:id="@+id/tx_data_d8_02last"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:text="@string/dialog_data_11"
+                                android:textColor="@color/blue_5"
+                                android:textSize="@dimen/txt_14" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/dp_5">
+
+                        <TextView
+                            android:id="@+id/dialog_data_text_d8_gc"
+                            android:layout_width="@dimen/dp_80"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:gravity="end"
+                            android:text="@string/dialog_data_12"
+                            android:textColor="@color/black_0"
+                            android:textSize="@dimen/txt_14" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/dialog_data_text_d8_gc"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tx_data_d8_03"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:text="@string/dialog_data_12"
+                                android:textColor="@color/black_0"
+                                android:textSize="@dimen/txt_14" />
+
+                            <TextView
+                                android:id="@+id/tx_data_d8_03last"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:text="@string/dialog_data_12"
+                                android:textColor="@color/blue_5"
+                                android:textSize="@dimen/txt_14" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <!--d9-->
+                <LinearLayout
+                    android:id="@+id/l_data_d9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_10"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/dp_5">
+
+                        <TextView
+                            android:id="@+id/dialog_data_text_d9_tg"
+                            android:layout_width="@dimen/dp_80"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:gravity="end"
+                            android:text="@string/dialog_data_14"
+                            android:textColor="@color/black_0"
+                            android:textSize="@dimen/txt_14" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/dialog_data_text_d9_tg"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tx_data_d9_01"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:text="@string/dialog_data_14"
+                                android:textColor="@color/black_0"
+                                android:textSize="@dimen/txt_14" />
+
+                            <TextView
+                                android:id="@+id/tx_data_d9_01last"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:text="@string/dialog_data_14"
+                                android:textColor="@color/blue_5"
+                                android:textSize="@dimen/txt_14" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/dialog_data_text_d9_pl"
+                            android:layout_width="@dimen/dp_80"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:gravity="end"
+                            android:text="@string/dialog_data_15"
+                            android:textColor="@color/black_0"
+                            android:textSize="@dimen/txt_14" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/dialog_data_text_d9_pl"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tx_data_d9_02"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:text="@string/dialog_data_15"
+                                android:textColor="@color/black_0"
+                                android:textSize="@dimen/txt_14" />
+
+                            <TextView
+                                android:id="@+id/tx_data_d9_02last"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:text="@string/dialog_data_06"
+                                android:textColor="@color/blue_5"
+                                android:textSize="@dimen/txt_14" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <!--dc-->
+                <LinearLayout
+                    android:id="@+id/l_data_dc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_10"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/dialog_data_text_dc_zzczd"
+                            android:layout_width="@dimen/dp_100"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:gravity="end"
+                            android:text="@string/dialog_data_19"
+                            android:textColor="@color/black_0"
+                            android:textSize="@dimen/txt_14" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/dialog_data_text_dc_zzczd"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tx_data_dc_01"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:text="@string/dialog_data_19"
+                                android:textColor="@color/black_0"
+                                android:textSize="@dimen/txt_14" />
+
+                            <TextView
+                                android:id="@+id/tx_data_dc_01last"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:text="@string/dialog_data_19"
+                                android:textColor="@color/blue_5"
+                                android:textSize="@dimen/txt_14" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+                <!--de-->
+                <LinearLayout
+                    android:id="@+id/l_data_de"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_10"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp_5">
+
+                        <TextView
+                            android:id="@+id/dialog_data_text_de_zzkj"
+                            android:layout_width="@dimen/dp_80"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:gravity="end"
+                            android:text="@string/dialog_data_18"
+                            android:textColor="@color/black_0"
+                            android:textSize="@dimen/txt_14" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/dialog_data_text_de_zzkj"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tx_data_de_01"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:text="@string/dialog_data_18"
+                                android:textColor="@color/black_0"
+                                android:textSize="@dimen/txt_14" />
+
+                            <TextView
+                                android:id="@+id/tx_data_de_01last"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:text="@string/dialog_data_18"
+                                android:textColor="@color/blue_5"
+                                android:textSize="@dimen/txt_14" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_5"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_main_17"
+                    android:textColor="@color/black_0"
+                    android:textSize="@dimen/txt_14" />
+
+                <EditText
+                    android:id="@+id/tx_home_note"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/home_main_12"
+                    android:textColor="@color/black_0"
+                    android:textSize="@dimen/txt_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="65dp"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/positiveButton"
+                    android:layout_width="@dimen/dp_85"
+                    android:layout_height="@dimen/dp_40"
+                    android:background="@drawable/button"
+                    android:gravity="center"
+                    android:text="@string/dialog_route_02"
+                    android:textColor="@color/white_1"
+                    android:textSize="@dimen/txt_20"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:id="@+id/negativeButton"
+                    android:layout_width="@dimen/dp_85"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/button"
+                    android:gravity="center"
+                    android:text="@string/dialog_data_01"
+                    android:textColor="@color/white_1"
+                    android:textSize="@dimen/txt_20"
+                    tools:ignore="ButtonStyle" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
