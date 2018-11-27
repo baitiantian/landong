@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+
+    <TextView android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:textSize="30sp"
+        android:textColor="@color/main_color_3"
+        android:gravity="center"
+        android:text="12345"
+        android:background="@drawable/bg_examine_item"/>
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/send"
+        android:src="@drawable/check_box_select"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        />
+</LinearLayout>

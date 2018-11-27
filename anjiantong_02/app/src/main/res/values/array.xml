@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="s_car_num_4">
+        <item>-请选择-</item>
+        <item>科室1</item>
+        <item>科室2</item>
+        <item>科室3</item>
+        <item>科室4</item>
+        <item>科室5</item>
+        <item>科室6</item>
+    </string-array>
+    <string-array name="s_car_num_5">
+        <item>-请选择-</item>
+        <item>财务</item>
+        <item>技术</item>
+        <item>行政</item>
+    </string-array>
+    <string-array name="s_car_num_6">
+        <item>-请选择-</item>
+        <item>国企</item>
+        <item>事业单位</item>
+        <item>私企</item>
+        <item>上市公司</item>
+        <item>股份制公司</item>
+        <item>外企</item>
+    </string-array>
+    <string-array name="s_car_num_7">
+        <item>-请选择-</item>
+        <item>日常检查</item>
+        <item>职业健康检查</item>
+        <item>专项检查</item>
+        <item>投诉检查</item>
+        <item>上级交办</item>
+        <item>执法大检查</item>
+        <item>隐患自报抽查</item>
+        <item>联合执法</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="s_car_num_8">
+        <item>-请选择-</item>
+        <item>一般隐患</item>
+        <item>重大隐患</item>
+    </string-array>
+    <string-array name="s_car_num_9">
+        <item>-请选择-</item>
+        <item>立即整改</item>
+        <item>限期整改</item>
+        <item>现场处罚</item>
+        <item>停产整改</item>
+        <item>停产整顿</item>
+        <item>其&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;他</item>
+    </string-array>
+    <string-array name="s_car_num_10">
+        <item>-请选择-</item>
+        <item>煤矿</item>
+        <item>非煤矿山</item>
+        <item>烟花爆竹</item>
+        <item>危险化学品</item>
+        <item>冶金工贸</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="s_car_num_11">
+        <item>-请选择-</item>
+        <item>类型1</item>
+        <item>类型2</item>
+        <item>类型3</item>
+        <item>类型4</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="s_car_num_12">
+        <item>-请选择-</item>
+        <item>已整改</item>
+        <item>未整改</item>
+        <item>整改中</item>
+    </string-array>
+    <string-array name="s_car_num_13">
+        <item>外&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;网</item>
+        <item>内&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;网</item>
+    </string-array>
+    <string-array name="s_car_num_14">
+        <item>煤矿安全事故案例</item>
+        <item>非煤矿山事故案例</item>
+        <item>化工安全事故案例</item>
+        <item>消防安全事故案例</item>
+        <item>冶金行业事故案例</item>
+        <item>建筑安全事故案例</item>
+        <item>机械安全事故案例</item>
+        <item>特种作业事故案例</item>
+        <item>电力安全事故案例</item>
+        <item>其他行业事故案例</item>
+    </string-array>
+    <string-array name="s_car_num_15">
+        <item>已申请未复查隐患</item>
+        <item>未整改未复查隐患</item>
+    </string-array>
+    <string-array name="s_car_num_16">
+        <item>一般事故</item>
+        <item>重大事故</item>
+    </string-array>
+    <string-array name="s_car_num_17">
+        <!--<item>-请选择-</item>-->
+        <item>煤矿</item>
+        <item>非煤矿</item>
+    </string-array>
+    <string-array name="s_car_num_18">
+        <!--<item>-请选择-</item>-->
+        <!--<item>2017</item>-->
+        <!--<item>2018</item>-->
+    </string-array>
+    <string-array name="s_car_num_19">
+        <item>-请选择-</item>
+        <item>检查方案</item>
+        <item>现场检查记录</item>
+        <item>现场处理措施</item>
+        <item>限期整改指令</item>
+        <item>单位行政处罚</item>
+        <item>个人行政处罚</item>
+    </string-array>
+    <string-array name="s_car_num_20">
+        <!--<item>-请选择-</item>-->
+        <item>指定复查部门</item>
+        <item>企业集团自查</item>
+    </string-array>
+</resources>

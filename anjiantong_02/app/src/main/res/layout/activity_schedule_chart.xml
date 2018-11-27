@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ScheduleChartActivity">
+
+    <include
+        android:id="@+id/schedule_chart_top"
+        layout="@layout/i_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/schedule_chart_rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/schedule_chart_top">
+
+        <RelativeLayout
+            android:id="@+id/schedule_chart_rl_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+            <TextView
+                android:id="@+id/schedule_chart_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_color_3"
+                android:textSize="14sp"
+                android:text="行业类型："
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"/>
+            <Spinner
+                android:id="@+id/schedule_chart_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:textColor="@color/main_color_3"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:entries="@array/s_car_num_17"
+                android:spinnerMode="dropdown"
+                android:layout_gravity="center"
+                android:layout_weight="0.7"
+                android:layout_toRightOf="@+id/schedule_chart_type"/>
+            <TextView
+                android:id="@+id/schedule_chart_type_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_color_3"
+                android:textSize="14sp"
+                android:text="时间："
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/schedule_chart_spinner"/>
+            <Spinner
+                android:id="@+id/schedule_chart_spinner_time"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+
+                android:textColor="@color/main_color_3"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:spinnerMode="dropdown"
+                android:layout_gravity="center"
+                android:layout_weight="0.7"
+                android:layout_toRightOf="@+id/schedule_chart_type_time"/>
+            <!--android:entries="@array/s_car_num_18"-->
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_below="@+id/schedule_chart_rl_top">-->
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/schedule_chart_barchart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/schedule_chart_rl_top"/>
+    <!--</RelativeLayout>-->
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp_20"
+    android:id="@+id/item_spinner_time">
+
+    <TextView
+        android:id="@+id/item_spinner_time1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="2018"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/item_spinner_time2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_spinner_time1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="2017"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/item_spinner_time3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_spinner_time2"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="2019"
+        android:textSize="15sp"/>
+</RelativeLayout>

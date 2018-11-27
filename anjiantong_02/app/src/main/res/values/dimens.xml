@@ -1,0 +1,17 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!--用户资料动画效果数值-->
+    <dimen name="default_collapsed_padding">40dp</dimen>
+    <dimen name="default_expanded_padding">30dp</dimen>
+    <dimen name="default_collapsed_image_size">40dp</dimen>
+    <dimen name="default_expanded_image_size">80dp</dimen>
+    <dimen name="default_collapsed_text_size">24sp</dimen>
+    <dimen name="default_expanded_text_size">36sp</dimen>
+    <!--用户资料某些部件数值-->
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="keyline_2">72dp</dimen>
+    <dimen name="expanded_toolbar_height">144dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:background="@color/main_color_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+
+        <LinearLayout
+
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp">
+                <EditText
+                    android:paddingLeft="15dp"
+                    android:drawableLeft="@drawable/img_search"
+                    android:drawablePadding="5dp"
+                    android:id="@+id/search_et_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:textSize="18sp"
+                    android:imeOptions="actionSearch"
+                    android:layout_centerVertical="true"
+                    android:inputType="text"
+                    android:hint="点击输入关键字"
+                    android:background="@drawable/et_bg_02"/>
+
+                <ImageView
+                    android:visibility="gone"
+                    android:src="@drawable/img_search_iv_delete"
+                    android:id="@+id/search_iv_delete"
+                    android:layout_marginRight="20dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignRight="@+id/search_et_input"
+                    android:layout_alignEnd="@+id/search_et_input" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/search_btn_back"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:text="搜 索"
+
+        />
+    </LinearLayout>
+
+    <ListView
+        android:visibility="gone"
+        android:id="@+id/search_lv_tips"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+    </ListView>
+
+</LinearLayout>

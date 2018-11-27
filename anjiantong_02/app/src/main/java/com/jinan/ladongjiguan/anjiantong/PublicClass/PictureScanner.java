@@ -1,0 +1,48 @@
+package com.jinan.ladongjiguan.anjiantong.PublicClass;
+
+import android.content.Context;
+import android.content.Intent;
+import android.media.MediaScannerConnection;
+import android.net.Uri;
+
+import java.io.File;
+
+public class PictureScanner implements MediaScannerConnection.MediaScannerConnectionClient{
+
+    private MediaScannerConnection mMs;
+    private File mFile;
+    private Context context;
+
+    File[] allFiles ;
+
+    public PictureScanner(Context context) {
+        File folder = new File("/sdcard/快速执法图库");
+        allFiles = folder.listFiles();
+        swap(allFiles);
+
+        this.context = context;
+        mFile = allFiles[0];
+        mMs = new MediaScannerConnection(context, this);
+        mMs.connect();
+    }
+
+    public void onMediaScannerConnected() {
+        mMs.scanFile(mFile.getAbsolutePath(), null);
+    }
+
+    public void onScanCompleted(String path, Uri uri) {
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(uri);
+        context.startActivity(intent);
+        mMs.disconnect();
+    }
+
+    private void swap(File a[]){
+        int len = a.length;
+        for(int i=0;i<len/2;i++){
+            File tmp = a[i];
+            a[i] = a[len-1-i];
+            a[len-1-i] = tmp;
+        }
+    }
+}

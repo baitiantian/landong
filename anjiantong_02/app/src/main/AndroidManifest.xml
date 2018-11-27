@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.jinan.ladongjiguan.anjiantong">
+
+    <!-- android:sharedUserId="android.ui.system" -->
+    <!-- 系统权限 -->
+    <uses-permission android:name="android.permission.MANAGE_USERS" />
+    <uses-permission android:name="android.permission.CREATE_USERS" />
+    <!-- 相机权限 -->
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 声明App的相关权限 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 网络访问 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- SD卡写 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- SD卡读 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" /> <!-- 加载文件系统的权限 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" /> <!-- 修改网络状态的权限 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> <!-- 修改wifi状态的权限 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 获取wifi状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 获取网络状态 -->
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" /> <!-- 杀死其他进程的权限 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" /> <!-- 修改系统设置  6.0 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- service中显示悬浮在桌面的窗口权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- 获取录音的权限 -->
+    <uses-permission android:name="android.permission.RECORD_VIDEO" /> <!-- 获取视频的权限 -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission
+        android:name="android.permission.MODIFY_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission
+        android:name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.OVERRIDE_WIFI_CONFIG" />
+
+    <uses-permission
+        android:name="android.permission.WRITE_SECURE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.hardware.usb.host"
+        android:required="false" />
+
+    <!-- 没有功能OTG声明 -->
+    <application
+
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon,android:theme"
+        android:name=".PublicClass.MyApplication" >
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="jinan.landong.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <!-- <data android:scheme="wxde916e84088a2b98"/> -->
+            </intent-filter>
+        </activity>
+        <!-- 启动页 -->
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <!-- 登录页 -->
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <!-- 公司信息页 -->
+        <activity
+            android:name=".activity.EnterpriseInformationActivity"
+            android:screenOrientation="portrait" />
+        <!-- 制定计划修改计划执行计划页面 -->
+        <activity
+            android:name=".activity.CheckUpActivity"
+            android:screenOrientation="portrait" />
+        <!-- 计划详细数据页面 -->
+        <activity
+            android:name=".activity.CheckUpDateActivity"
+            android:screenOrientation="portrait" />
+        <!-- 人员分组 -->
+        <activity
+            android:name=".activity.PeopleGroupActivity"
+            android:screenOrientation="portrait" />
+        <!-- 修改人员分组 -->
+        <activity
+            android:name=".activity.PeopleGroupModifyActivity"
+            android:screenOrientation="portrait" />
+        <!-- 添加问题 -->
+        <activity
+            android:name=".activity.AddCheckProblemActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!-- 设置页面 -->
+        <activity
+            android:name=".activity.SettingActivity"
+            android:screenOrientation="portrait" />
+        <!-- 数据传输页面 -->
+        <activity
+            android:name=".activity.DateTransmissionActivity"
+            android:screenOrientation="portrait" />
+        <!-- 搜索页面 -->
+        <activity
+            android:name=".activity.SearchActivity"
+            android:screenOrientation="portrait" />
+        <!-- 登录配置界面 -->
+        <activity
+            android:name=".activity.LoginSettingIPActivity"
+            android:screenOrientation="portrait" />
+        <!-- 企业详细信息界面 -->
+        <activity
+            android:name=".activity.EnterpriseInformationDateActivity"
+            android:screenOrientation="portrait" />
+        <!-- 监管执法主页面 -->
+        <activity
+            android:name=".activity.CheckUpMainActivity"
+            android:screenOrientation="portrait" />
+        <!-- 制作文书主界面 -->
+        <activity
+            android:name=".activity.PrintOutActivity"
+            android:screenOrientation="portrait" />
+        <!-- 制作文书的几个界面 -->
+        <activity
+            android:name=".activity.PrintOut01Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PrintOut02Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PrintOut03Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PrintOut04Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PrintOut05Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PrintOut06Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PrintOut07Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PrintOut08Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PrintOut09Activity"
+            android:screenOrientation="portrait" />
+
+        <!-- 问题参考条例界面 -->
+        <activity
+            android:name=".activity.CheckDetailedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CheckDetailedListActivity"
+            android:screenOrientation="portrait" />
+        <!-- 知识库页面 -->
+        <activity
+            android:name=".activity.KnowledgeActivity"
+            android:screenOrientation="portrait" />
+        <!-- 统计 -->
+        <activity
+            android:name=".activity.BlankPageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CountMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CountEnterpriseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CheckUpDateLoadActivity"
+            android:screenOrientation="portrait" />
+        <!-- 修改密码页面 -->
+        <activity
+            android:name=".activity.SettingPasswordActivity"
+            android:screenOrientation="portrait" />
+        <!-- 用户详细界面 -->
+        <activity
+            android:name=".activity.SettingUserMessageActivity"
+            android:screenOrientation="portrait" />
+        <!-- 任务分发界面 -->
+        <activity
+            android:name=".activity.UpCheckUpDateActivity"
+            android:screenOrientation="portrait" />
+        <!-- 危化品详情页面 -->
+        <activity
+            android:name=".activity.HazardousChemicalsActivity"
+            android:screenOrientation="portrait" />
+        <!-- 数据分发页面（客户端间） -->
+        <activity
+            android:name=".activity.Files_Trans_Activity"
+            android:screenOrientation="portrait" />
+        <!-- 执法人员界面 -->
+        <activity
+            android:name=".activity.PersonnelManagementActivity"
+            android:screenOrientation="portrait" />
+        <!-- 执法人员详细信息 -->
+        <activity
+            android:name=".activity.PersonnelMessageActivity"
+            android:screenOrientation="portrait" />
+        <!-- 问题复查的一系列页面 -->
+        <!-- 制定修改复查计划 -->
+        <activity
+            android:name=".activity.ReviewNewPlanActivity"
+            android:screenOrientation="portrait" />
+        <!-- 需复查企业列表 -->
+        <activity
+            android:name=".activity.ReviewBusinessListActivity"
+            android:screenOrientation="portrait" />
+        <!-- 问题复查 -->
+        <activity
+            android:name=".activity.ReviewActivity"
+            android:screenOrientation="portrait" />
+        <!-- 执行复查计划 -->
+        <activity
+            android:name=".activity.ReviewPlanActivity"
+            android:screenOrientation="portrait" />
+        <!-- 分发复查计划 -->
+        <activity
+            android:name=".activity.ReviewPlanUpActivity"
+            android:screenOrientation="portrait" />
+        <!-- 制定复查计划 -->
+        <activity
+            android:name=".activity.ReviewPlanDateActivity"
+            android:screenOrientation="portrait" />
+        <!-- 选择隐患 -->
+        <activity
+            android:name=".activity.ReviewHiddenActivity"
+            android:screenOrientation="portrait" />
+        <!-- 修改复查计划 -->
+        <activity
+            android:name=".activity.ReviewModifyActivity"
+            android:screenOrientation="portrait" />
+        <!-- 查看复查计划 -->
+        <activity
+            android:name=".activity.ReviewImplementActivity"
+            android:screenOrientation="portrait" />
+        <!-- 复查人员分组 -->
+        <activity
+            android:name=".activity.ReviewPeopleGroupActivity"
+            android:screenOrientation="portrait" />
+        <!-- 复查人员分组查看 -->
+        <activity
+            android:name=".activity.ReviewPeopleGroupCheckActivity"
+            android:screenOrientation="portrait" />
+        <!-- 隐患复查 -->
+        <activity
+            android:name=".activity.ReviewHiddenImplementActivity"
+            android:screenOrientation="portrait" />
+        <!-- 连热点界面 -->
+        <activity
+            android:name=".activity.Files_Trans_Activity_01"
+            android:screenOrientation="portrait" />
+        <!-- 法律数据 -->
+        <activity
+            android:name=".activity.LawDateActivity"
+            android:screenOrientation="portrait" />
+        <!-- 防火间距 -->
+        <activity
+            android:name=".activity.FangHuoActivity"
+            android:screenOrientation="portrait" />
+        <!-- 事故案例 -->
+        <activity
+            android:name=".activity.AccidentCaseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AccidentCaseDateActivity"
+            android:screenOrientation="portrait" />
+        <!-- 法规反查 -->
+        <activity
+            android:name=".activity.LawItemActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 事故处理 -->
+        <activity
+            android:name=".activity.PdfActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AccidentDisposalActivity"
+            android:screenOrientation="portrait" />
+        <!-- 显示使用数据界面 -->
+        <activity
+            android:name=".activity.ShowDateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.VedioCaptureActivity"
+            android:screenOrientation="landscape" />
+        <!-- 法律法规 -->
+        <activity
+            android:name=".activity.LawActivity"
+            android:screenOrientation="portrait" />
+        <!-- 用户使用手册 -->
+        <activity
+            android:name=".activity.HelpActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <!-- 煤安查询页面 -->
+        <activity
+            android:name=".activity.CoalSafetyQuiryActivity"
+            android:screenOrientation="portrait" />
+        <!-- 隐患详细页面 -->
+        <activity
+            android:name=".activity.HiddenDangerActivity"
+            android:screenOrientation="portrait" />
+        <!-- 新添企业信息 -->
+        <activity
+            android:name=".activity.EnterpriseInformationAddActivity"
+            android:screenOrientation="portrait" />
+        <!-- 消息推送 -->
+        <service
+            android:name=".Service.MessageService"
+            android:label="消息推送"
+            android:process=".message" />
+        <!-- 消息提醒 -->
+        <activity
+            android:name=".activity.MessageActivity"
+            android:screenOrientation="portrait" />
+        <!-- 拍摄视频页面 -->
+        <activity android:name=".activity.VedioActivity" />
+        <activity
+            android:name=".activity.SuccessActivity"
+            android:screenOrientation="portrait" />
+        <!-- 博弈跳转查询口界面 -->
+        <activity
+            android:name=".activity.SearchLoginActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <!-- 各类进度计划页面 -->
+        <!-- 事故调查页面 -->
+        <activity
+            android:name=".activity.AccidentInvestigationMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AccidentInvestigationDateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ScheduleMain2Activity"
+            android:launchMode="singleTask" />
+        <activity android:name=".activity.ScheduleChartActivity" />
+        <!-- 本地文件查看各类页面 -->
+        <activity
+            android:name=".activity.DataTransmissionFileMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DataTransmissionFileActivity"
+            android:screenOrientation="portrait" />
+        <!-- 二维码扫描 -->
+        <activity
+            android:name=".activity.DefaultCaptureActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.SearchRuleActivity" />
+        <activity android:name=".activity.CheckRuleActivity" />
+        <activity android:name=".activity.LawDetailActivity"></activity>
+        <activity android:name=".activity.SimpleCheckMainActivity" />
+    </application>
+
+</manifest>

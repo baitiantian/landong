@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jinan.ladongjiguan.anjiantong.activity.CheckRuleActivity">
+
+    <include
+        layout="@layout/i_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:gravity="end"
+            android:text="@string/law_item_01"
+            android:textColor="@color/main_color_3"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/check_rule_et_name"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.6"
+            android:background="@drawable/et_bg_01"
+            android:gravity="center"
+            android:hint="@string/law_item_02"
+            android:textColor="@color/main_color_3"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/check_rule_btn_check"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="0.2"
+            android:background="@drawable/button"
+            android:text="@string/add_check_problem_11"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/main_color_3"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/law_item_03"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+   <!-- <ListView
+        android:id="@+id/check_rule_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/check_rule_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

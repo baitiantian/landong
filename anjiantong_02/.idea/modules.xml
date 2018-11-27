@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ChartLib/ChartLib.iml" filepath="$PROJECT_DIR$/ChartLib/ChartLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/alphaview/alphaview.iml" filepath="$PROJECT_DIR$/alphaview/alphaview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-pdf/android-pdf.iml" filepath="$PROJECT_DIR$/android-pdf/android-pdf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/anjiantong_02.iml" filepath="$PROJECT_DIR$/anjiantong_02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zxinglite/zxinglite.iml" filepath="$PROJECT_DIR$/zxinglite/zxinglite.iml" />
+    </modules>
+  </component>
+</project>

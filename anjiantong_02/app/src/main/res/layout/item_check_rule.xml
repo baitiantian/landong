@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/item_checkrule_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:text="1111"
+        android:padding="5dp"
+        android:maxLines="1"
+        android:textColor="@color/main_color_3"
+        android:textSize="16sp" />
+
+</RelativeLayout>
