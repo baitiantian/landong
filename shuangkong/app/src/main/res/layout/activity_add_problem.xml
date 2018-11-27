@@ -1,0 +1,862 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_1"
+    android:orientation="vertical"
+    android:id="@+id/add_problem_ll_root">
+
+    <include
+        layout="@layout/i_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_2"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dp_5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp_10"
+                        android:text="@string/add_problem_01"
+                        android:textColor="@color/gray_0"
+                        android:textSize="@dimen/txt_16" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginStart="@dimen/dp_10"
+                        android:layout_marginEnd="@dimen/dp_10"
+                        android:background="@color/gray_1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"><!--android:gravity="center"-->
+                    <!--<GridView-->
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/add_problem_grid_photo"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:visibility="invisible"
+                        android:layout_margin="@dimen/dp_10"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="0.2"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/add_problem_btn_photo"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/button"
+                            android:text="@string/add_problem_05"
+                            android:textColor="@android:color/white"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/add_problem_ll_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white_2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp_10"
+                        android:layout_weight="2"
+                        android:text="@string/add_problem_02"
+                        android:textColor="@color/gray_0"
+                        android:textSize="@dimen/txt_16" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="7"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/add_problem_tv_checktime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dp_5"
+                            android:text="@string/add_problem_06"
+                            android:textColor="@color/black_0"
+                            android:textSize="@dimen/txt_16" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/gray_1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/add_problem_ll_checktime"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_margin="@dimen/dp_5"
+                            android:src="@drawable/img_list_home_time" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white_2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp_10"
+                        android:layout_weight="2"
+                        android:text="@string/add_problem_03"
+                        android:textColor="@color/gray_0"
+                        android:textSize="@dimen/txt_16" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="7"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/add_problem_tv_checkaddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dp_5"
+                            android:text="@string/add_problem_07"
+                            android:textColor="@color/black_0"
+                            android:textSize="@dimen/txt_16" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/gray_1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:clickable="true"
+
+                        android:focusable="true">
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_margin="@dimen/dp_5"
+                            android:src="@drawable/img_list_home_address" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white_2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp_10"
+                        android:layout_weight="2"
+                        android:text="@string/add_problem_04"
+                        android:textColor="@color/gray_0"
+                        android:textSize="@dimen/txt_16" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="8"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/add_problem_et_checkcontent"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dp_5"
+                            android:background="@color/white_2"
+                            android:hint="@string/add_problem_08"
+                            android:inputType="text"
+                            android:textColor="@color/black_0"
+                            android:textSize="@dimen/txt_16" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_marginEnd="@dimen/dp_10"
+                            android:background="@color/gray_1" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_10"
+                    android:background="@drawable/bg_add_problem_fengxian"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp_10"
+                        android:gravity="center|left"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dp_10"
+                            android:text="@string/add_problem_fengxian_06"
+                            android:textColor="@color/gray_0"
+                            android:textSize="@dimen/txt_14"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/add_problem_tv_fengxian_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/add_problem_fengxian_07"
+                            android:textColor="@color/red_0"
+                            android:textSize="@dimen/txt_14" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/add_problem_fengxian_08"
+                            android:textColor="@color/gray_0"
+                            android:textSize="@dimen/txt_14" />
+
+                        <LinearLayout
+                            android:id="@+id/add_problem_ll_fengxian_problem"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center|end">
+
+                            <ImageView
+                                android:layout_width="16dp"
+                                android:layout_height="16dp"
+                                android:layout_margin="@dimen/dp_5"
+                                android:src="@drawable/img_add_problem_responsibility_department" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/dp_10"
+                                android:text="@string/add_problem_fengxian_01"
+                                android:textColor="@color/gray_1"
+                                android:textSize="@dimen/txt_14" />
+
+                            <TextView
+                                android:id="@+id/add_problem_tv_fengxian_code"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/app_null"
+                                android:textColor="@color/gray_0"
+                                android:textSize="@dimen/txt_14" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/dp_10"
+                                android:text="@string/add_problem_fengxian_02"
+                                android:textColor="@color/gray_1"
+                                android:textSize="@dimen/txt_14"
+
+                                />
+
+                            <TextView
+                                android:id="@+id/add_problem_tv_fengxian_style"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/app_null"
+                                android:textColor="@color/gray_0"
+                                android:textSize="@dimen/txt_14" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/dp_10"
+                                android:text="@string/add_problem_fengxian_03"
+                                android:textColor="@color/gray_1"
+                                android:textSize="@dimen/txt_14" />
+
+                            <TextView
+                                android:id="@+id/add_problem_tv_fengxian_money"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/app_null"
+                                android:textColor="@color/gray_0"
+                                android:textSize="@dimen/txt_14" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/dp_10"
+                                android:text="@string/add_problem_fengxian_04"
+                                android:textColor="@color/gray_1"
+                                android:textSize="@dimen/txt_14"
+
+                                />
+
+                            <TextView
+                                android:id="@+id/add_problem_tv_fengxian_level"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/app_null"
+                                android:textColor="@color/gray_0"
+                                android:textSize="@dimen/txt_14" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp_10"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/add_problem_tv_fengxian_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/app_null"
+                            android:textColor="@color/gray_0"
+                            android:textSize="@dimen/txt_14" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="@color/white_2"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp_10"
+                        android:text="@string/add_problem_fine_01"
+                        android:textColor="@color/gray_0"
+                        android:textSize="@dimen/txt_16" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginStart="@dimen/dp_10"
+                        android:layout_marginEnd="@dimen/dp_10"
+                        android:background="@color/gray_1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white_2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp_10"
+                        android:layout_weight="2"
+                        android:text="@string/add_problem_fine_02"
+                        android:textColor="@color/gray_0"
+                        android:textSize="@dimen/txt_16" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="8"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/add_problem_et_fine_money"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dp_5"
+                            android:background="@color/white_2"
+                            android:hint="@string/add_problem_fine_05"
+                            android:textColor="@color/black_0"
+                            android:textSize="@dimen/txt_16" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_marginEnd="@dimen/dp_10"
+                            android:background="@color/gray_1" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white_2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp_10"
+                        android:layout_weight="2"
+                        android:text="@string/add_problem_fine_03"
+                        android:textColor="@color/gray_0"
+                        android:textSize="@dimen/txt_16" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="8"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/add_problem_et_fine_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dp_5"
+                            android:background="@color/white_2"
+                            android:hint="@string/add_problem_fine_06"
+                            android:textColor="@color/black_0"
+                            android:textSize="@dimen/txt_16" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_marginEnd="@dimen/dp_10"
+                            android:background="@color/gray_1" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white_2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp_10"
+                        android:layout_weight="2"
+                        android:text="@string/add_problem_fine_04"
+                        android:textColor="@color/gray_0"
+                        android:textSize="@dimen/txt_16" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="8"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/add_problem_et_fine_reason"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dp_5"
+                            android:background="@color/white_2"
+                            android:hint="@string/add_problem_fine_07"
+                            android:inputType="text"
+                            android:textColor="@color/black_0"
+                            android:textSize="@dimen/txt_16" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_marginEnd="@dimen/dp_10"
+                            android:background="@color/gray_1" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="@color/white_2"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp_10"
+                        android:text="@string/add_problem_responsibility_01"
+                        android:textColor="@color/gray_0"
+                        android:textSize="@dimen/txt_16" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginStart="@dimen/dp_10"
+                        android:layout_marginEnd="@dimen/dp_10"
+                        android:background="@color/gray_1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white_2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp_10"
+                        android:layout_weight="2"
+                        android:text="@string/add_problem_responsibility_02"
+                        android:textColor="@color/gray_0"
+                        android:textSize="@dimen/txt_16" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="7"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/add_problem_tv_responsibility_departmen"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dp_5"
+                            android:text="@string/add_problem_responsibility_05"
+                            android:textColor="@color/black_0"
+                            android:textSize="@dimen/txt_16" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/gray_1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/add_problem_ll_responsibility_departmen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_margin="@dimen/dp_5"
+                            android:src="@drawable/img_add_problem_responsibility_department" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white_2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp_10"
+                        android:layout_weight="2"
+                        android:text="@string/add_problem_responsibility_03"
+                        android:textColor="@color/gray_0"
+                        android:textSize="@dimen/txt_16" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="7"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/add_problem_tv_responsibility_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dp_5"
+                            android:text="@string/add_problem_responsibility_06"
+                            android:textColor="@color/black_0"
+                            android:textSize="@dimen/txt_16" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/gray_1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/add_problem_ll_responsibility_time"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_margin="@dimen/dp_5"
+                            android:src="@drawable/img_list_home_time" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white_2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp_10"
+                        android:layout_weight="2"
+                        android:text="@string/add_problem_04"
+                        android:textColor="@color/gray_0"
+                        android:textSize="@dimen/txt_16" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="8"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/add_problem_et_responsibility_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dp_5"
+                            android:background="@color/white_2"
+                            android:hint="@string/add_problem_responsibility_07"
+                            android:inputType="text"
+                            android:textColor="@color/black_0"
+                            android:textSize="@dimen/txt_16" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:layout_marginEnd="@dimen/dp_10"
+                            android:background="@color/gray_1" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/white_2"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp_10"
+                        android:text="@string/add_problem_refer_01"
+                        android:textColor="@color/gray_1"
+                        android:textSize="@dimen/txt_12" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginStart="@dimen/dp_10"
+                        android:layout_marginEnd="@dimen/dp_10"
+                        android:background="@color/gray_1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white_2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp_10"
+                        android:layout_weight="2"
+                        android:text="@string/add_problem_refer_02"
+                        android:textColor="@color/gray_0"
+                        android:textSize="@dimen/txt_16" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="7"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/add_problem_tv_refer_department"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dp_5"
+                            android:text="@string/add_problem_responsibility_05"
+                            android:textColor="@color/black_0"
+                            android:textSize="@dimen/txt_16" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/gray_1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/add_problem_ll_refer_department"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:focusable="true">
+
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_margin="@dimen/dp_5"
+                            android:src="@drawable/img_add_problem_responsibility_department" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/add_problem_ll_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_10"
+                    android:background="@color/white_2"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button"
+                        android:text="@string/add_problem_09"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/txt_20" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

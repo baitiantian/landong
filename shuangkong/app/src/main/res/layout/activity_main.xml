@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.05"
+        android:gravity="center"
+        android:background="@color/blue_0">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="当前地点：503出风口"
+            android:textSize="16sp"
+            android:textColor="@color/white_2"
+            android:gravity="center"
+            />
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_1"/>
+
+    <com.jinan.landongjiguan.shuangkong.Views.AlphaIndicator
+        android:id="@+id/alphaIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal">
+
+        <com.jinan.landongjiguan.shuangkong.Views.AlphaView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:av_tabIconNormal="@drawable/home_normal"
+            app:av_tabIconSelected="@drawable/home_selected"
+            app:av_tabText="@string/main_01"
+            app:av_tabTextSize="14sp"
+            app:av_textColorNormal="@color/gray_1"
+            app:av_textColorSelected="@color/blue_11"/>
+        <com.jinan.landongjiguan.shuangkong.Views.AlphaView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:av_tabIconNormal="@drawable/service_normal"
+            app:av_tabIconSelected="@drawable/service_selected"
+            app:av_tabText="@string/main_03"
+            app:av_tabTextSize="14sp"
+            app:av_textColorNormal="@color/gray_1"
+            app:av_textColorSelected="@color/blue_11"/>
+
+        <com.jinan.landongjiguan.shuangkong.Views.AlphaView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:av_tabIconNormal="@drawable/category_normal"
+            app:av_tabIconSelected="@drawable/category_selected"
+            app:av_tabText="@string/main_02"
+            app:av_tabTextSize="14sp"
+            app:av_textColorNormal="@color/gray_1"
+            app:av_textColorSelected="@color/blue_11"/>
+
+
+        <com.jinan.landongjiguan.shuangkong.Views.AlphaView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:av_tabIconNormal="@drawable/mine_normal"
+            app:av_tabIconSelected="@drawable/mine_selected"
+            app:av_tabText="@string/main_04"
+            app:av_tabTextSize="14sp"
+            app:av_textColorNormal="@color/gray_1"
+            app:av_textColorSelected="@color/blue_11"/>
+    </com.jinan.landongjiguan.shuangkong.Views.AlphaIndicator>
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">双控系统</string>
+    <string name="app_maker">© 济南蓝动激光技术有限公司</string>
+    <string name="app_null">暂无</string>
+
+    <!--主页-->
+    <string name="main_01">首页</string>
+    <string name="main_02">风险</string>
+    <string name="main_03">检查</string>
+    <string name="main_04">我的</string>
+    <!--登录页-->
+    <string name="login_01">用&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;户：</string>
+    <string name="login_02">密&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;码：</string>
+    <string name="login_03">登&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;录</string>
+    <string name="login_04">请输入用户名</string>
+    <string name="login_05">请输入密码</string>
+
+    <!--首页-->
+    <string name="home_00">拍摄</string>
+    <string name="home_01">扫一扫</string>
+    <string name="home_02">查隐患</string>
+    <string name="home_03">录风险</string>
+    <string name="home_04">消息列表</string>
+    <string name="home_05">503出风口</string>
+    <!--我的-->
+    <string name="setting_main_01">用户姓名</string>
+    <string name="setting_main_02">用户账号</string>
+    <string name="setting_main_03">用户信息</string>
+    <string name="setting_main_04">清理缓存</string>
+    <string name="setting_main_05">版本号</string>
+    <string name="setting_main_06">V1.0</string>
+    <string name="setting_main_07">退出登录</string>
+    <!--添加隐患-->
+    <string name="add_problem_01">检查信息</string>
+    <string name="add_problem_02">检查时间</string>
+    <string name="add_problem_03">检查地点</string>
+    <string name="add_problem_04">隐患内容</string>
+    <string name="add_problem_05">拍&#160;&#160;&#160;&#160;照</string>
+    <string name="add_problem_06">请选择检查时间</string>
+    <string name="add_problem_07">请选择检查地点</string>
+    <string name="add_problem_08">请输入隐患内容</string>
+    <string name="add_problem_09">提&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;交</string>
+    <string name="add_problem_fengxian_01">隐患编码:</string>
+    <string name="add_problem_fengxian_02">隐患类别:</string>
+    <string name="add_problem_fengxian_03">罚款金额:</string>
+    <string name="add_problem_fengxian_04">隐患级别:</string>
+    <string name="add_problem_fengxian_05">隐患分类:</string>
+    <string name="add_problem_fengxian_06">匹配到</string>
+    <string name="add_problem_fengxian_07">0条</string>
+    <string name="add_problem_fengxian_08">相关隐患，点击选择</string>
+    <string name="add_problem_fine_01">罚款确认</string>
+    <string name="add_problem_fine_02">个人罚款</string>
+    <string name="add_problem_fine_03">姓&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;名</string>
+    <string name="add_problem_fine_04">罚款原因</string>
+    <string name="add_problem_fine_05">请输入数字形式的罚款金额</string>
+    <string name="add_problem_fine_06">请输入姓名</string>
+    <string name="add_problem_fine_07">请填写50字以内</string>
+    <string name="add_problem_responsibility_01">责任确认</string>
+    <string name="add_problem_responsibility_02">责任单位</string>
+    <string name="add_problem_responsibility_03">整改期限</string>
+    <string name="add_problem_responsibility_04">整改措施</string>
+    <string name="add_problem_responsibility_05">请选择</string>
+    <string name="add_problem_responsibility_06">请选择日期</string>
+    <string name="add_problem_responsibility_07">请填写50字以内</string>
+    <string name="add_problem_refer_01">请提交至责任单位进行处理</string>
+    <string name="add_problem_refer_02">提&#160;&#160;交&#160;&#160;至</string>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="s_home_message_state_1">
+        <item>未处理</item>
+        <item>已处理</item>
+        <item>全&#160;&#160;&#160;&#160;部</item>
+    </string-array>
+    <string-array name="s_home_message_time_1">
+        <item>检查时间</item>
+        <item>18-08-21</item>
+        <item>18-08-13</item>
+        <item>18-08-12</item>
+    </string-array>
+    <string-array name="s_home_message_address_1">
+        <item>检查地点</item>
+        <item>3上1201运岗</item>
+        <item>3上1008工作面</item>
+        <item>北翼轨道巷</item>
+    </string-array>
+    <string-array name="s_home_message_people_1">
+        <item>检查人</item>
+        <item>王明龙</item>
+        <item>陈一光</item>
+        <item>王彬</item>
+    </string-array>
+    <string-array name="s_home_message_1">
+        <item>1201运岗人员定位系统基站应及时回撤。</item>
+        <item>运岗51#架杆处及转载机道人员定位系统吊挂标准。</item>
+        <item>90KW绞车道中间连岗处帮部各类小线脱落、需及时吊挂。</item>
+    </string-array>
+</resources>
